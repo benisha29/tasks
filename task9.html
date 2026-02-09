@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing bg color using JavaScript</title>
+</head>
+<body>
+    <h1>Background Color Changer</h1>
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="blue">Blue</button>
+    <script>
+        document.getElementById("red").addEventListener("click", function() {
+            document.body.style.backgroundColor = "red";
+        });
+        document.getElementById("green").addEventListener("click", function() {
+            document.body.style.backgroundColor = "green";
+        });
+        document.getElementById("blue").addEventListener("click", function() {
+            socument.body.style.backgroundColor = "blue";
+        });
+    </script>
+</body>
+</html>
