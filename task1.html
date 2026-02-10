@@ -1,0 +1,40 @@
+<!-- ⭐ Task 1 — Text Changer using DOM
+Title: Change Text Using JavaScript DOM
+Goal: Learn basic DOM selection and text manipulation.
+Instructions:
+Create a file named task1.html
+
+Add the following in HTML:
+
+A heading: “DOM Text Changer”
+A paragraph with text: “Hello World”
+A button with text: “Change Text”
+
+In JavaScript:
+When the user clicks the button,
+Change the paragraph text to “Text Changed Successfully!”
+
+Hint (what you’ll practice):
+document.getElementById()
+innerText
+onclick / addEventListener
+
+Technologies:
+HTML + CSS + JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM text changer</title>
+</head>
+<body>
+    <p id="textChanger" >Hello world</p>
+    <button onclick="textChanged()">Change text</button>
+    <script>
+        function textChanged () {
+            document.getElementById("textChanger").innerHTML = `Text Changed Successfully!`;
+        }
+    </script>
+</body>
+</html>
