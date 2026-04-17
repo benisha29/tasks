@@ -1,0 +1,58 @@
+<!--
+Title: Add and Remove Class Using DOM
+Goal: Learn how to dynamically change styles using classList.
+Instructions:
+Create a file named task4.html
+
+Add the following in HTML:
+A heading: “Toggle Highlight”
+
+A paragraph with text:
+“Click the button to highlight this text.”
+A button with text: “Toggle Highlight”
+
+In CSS:
+Create a class named highlight
+
+Set:
+background-color: yellow
+font-weight: bold
+
+In JavaScript:
+When the button is clicked:
+Toggle the highlight class on the paragraph
+
+Hint (what you’ll practice):
+classList.toggle()
+Separating CSS from JS (good practice)
+
+Technologies:
+HTML + CSS + JavaScript
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove Class Using DOM</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Toggle Highlight</h1>
+    <p id="highlightText">Click the button to highlight this text.</p>
+    <button onclick="highlight()">Toggle Highlight</button>
+    <script>
+        function highlight() {
+            const textElement = document.getElementById("highlightText");
+            textElement.classList.toggle("highlight");
+        }
+        
+    </script>
+</body>
+</html>

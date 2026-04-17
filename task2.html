@@ -1,0 +1,49 @@
+<!--Title: Toggle Visibility Using DOM
+Goal: Learn DOM element selection and style manipulation.
+Instructions:
+Create a file named task2.html
+
+Add the following in HTML:
+A heading: “Show and Hide Text”
+A paragraph with text: “This text can be hidden or shown.”
+
+Two buttons:
+Show
+Hide
+
+In JavaScript:
+When Hide is clicked → hide the paragraph
+(style.display = "none")
+When Show is clicked → show the paragraph
+(style.display = "block")
+
+Hint (what you’ll practice):
+document.getElementById()
+style.display
+Button click events
+
+Technologies:
+HTML + CSS + JavaScript-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility Using DOM</title>
+</head>
+<body>
+    <h1>Show and Hide Text</h1>
+    <p id="text">This text can be hidden or shown.</p>
+    <button id="show" onclick="visible()">Show</button>
+    <button id="hide" onclick="notVisible()">Hide</button>
+    <script>
+        function visible() {
+            document.getElementById("text").style.display = "block";
+        }
+        function notVisible() {
+           document.getElementById("text").style.display = "none";
+        }
+    </script>
+</body>
+</html>
