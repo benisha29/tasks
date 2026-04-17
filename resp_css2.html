@@ -1,0 +1,41 @@
+<!-- Learning flex properties and how i t is better for space management than display: block 
+ For flexable layoutt use flex box. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: Block</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .parent {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;            
+        }
+        .children {
+            /* flex-grow: 0, flex-shrink: 1, flex-basis: auto -- default*/
+            flex-grow: 1; 
+            flex-shrink: 1; 
+            flex-basis: auto;
+            background-color: rgb(41, 40, 40);border-radius: 8px;
+            border: 1px solid rgb(95, 85, 85);
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: Flex</h1>
+    <div class="parent">
+        <div class="children">i have to erite random things so i am writing.</div>
+        <div class="children">This is a nice plce to be in, may you have a nice day!</div>
+        <div class="children">BREAKING: the apartment is on fire and it is spreading!</div>
+        <div class="children">People are there to put you down but you must stay strong in any situation which arrives.</div>
+        <div class="children">oh look! a panda with a red hat and a bamboo.</div>
+        <div class="children">Rate the look out of 10.</div>
+    </div>
+</body>
+</html>
