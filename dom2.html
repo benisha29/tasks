@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>woah</title>
+    <style>
+        body {
+            background-color: rgb(43, 43, 43);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        button {
+            margin: 1rem;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .el {
+            width: 10rem;
+            height: 6rem;
+            background-color: rgb(124, 29, 8);
+            border-radius: 2rem;
+            border: 1rem solid #f7c8b8;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="handleClick()">Click me</button>
+    <script>
+        const newElement = document.createElement('div');
+        newElement.setAttribute('class', 'el');
+        handleClick = () => {
+            document.body.appendChild(newElement);
+        }
+    </script>
+</body>
+</html>
