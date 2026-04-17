@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <style>
+        body {
+            background-color: rgb(43, 43, 43);
+            color: white;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1rem;
+            border: 1px solid rgb(109, 104, 104);
+            border-radius: 1rem;
+        }
+        .nav .center-nav {
+            font-size: 2rem;
+        }
+        .landing-page {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 2rem;
+            padding-top: 1rem;
+            height: 85vh;
+
+        }
+        .landing-page .left-lp, .landing-page .right-lp {
+            background-color: rgb(41, 40, 40);
+            border-radius: 8px;
+            border: 1px solid rgb(95, 85, 85);
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left-nav">Hamburger Icon</div>
+        <div class="center-nav">Brand</div>
+        <div class="right-nav">User Menu</div>
+    </div>
+    <div class="landing-page">
+        <div class="left-lp">She didn't understand how changed worked. When she looked at today compared to yesterday, there was nothing that she could see that was different. Yet, when she looked at today compared to last year, she couldn't see how anything was ever the same.</div>
+        <div class="right-lp">Don't forget that gifts often come with costs that go beyond their purchase price. When you purchase a child the latest smartphone, you're also committing to a monthly phone bill. When you purchase the latest gaming system, you're likely not going to be satisfied with the games that come with it for long and want to purchase new titles to play. When you buy gifts it's important to remember that some come with additional costs down the road that can be much more expensive than the initial gift itself.</div>
+    </div>
+</body>
+</html>
