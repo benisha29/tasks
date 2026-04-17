@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Title: Show User Input Using DOM
 Goal: Learn how to read input values and display them dynamically.
 Instructions:
@@ -51,4 +52,59 @@ HTML + CSS + JavaScript -->
         }
     </script>
 </body>
+=======
+<!-- Title: Show User Input Using DOM
+Goal: Learn how to read input values and display them dynamically.
+Instructions:
+Create a file named task3.html
+
+Add the following in HTML:
+A heading: “User Input Display”
+An input field with placeholder: “Enter your name”
+A button with text: “Submit”
+An empty paragraph below the button
+
+In JavaScript:
+When the button is clicked:
+Get the value entered in the input field
+
+Display the message:
+“Hello, <name>!”
+inside the paragraph
+
+Hint (what you’ll practice):
+document.getElementById()
+.value
+.innerText
+
+Technologies:
+HTML + CSS + JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show User Input Using DOM</title>
+</head>
+<body>
+    <h1>User Input Display</h1>
+    <input id="username" type="text" placeholder="Enter your name">
+    <button onClick="display()">Submit</button>
+    <p  id="text"</p>
+    <script>
+        function display() {
+            let name  = document.getElementById("username").value.trim();
+            if (name.length > 0){
+                name = name.charAt(0).toUpperCase() + name.slice(1);            
+                document.getElementById("text").innerText = `Hello, ${name}!`;}
+            else {
+                document.getElementById("text").innerText = `Enter Name!`;
+            }
+            
+
+        }
+    </script>
+</body>
+>>>>>>> 23709ca3913fee3b63ab4897f584c3770887f7c8
 </html>
