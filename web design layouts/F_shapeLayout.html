@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-Shape Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(38, 37, 37);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 1rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid rgb(95, 85, 85);
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .center-nav {
+            font-size: 2rem;
+        }
+
+        .landing-page .top {
+            border: 1px solid rgb(95, 85, 85);
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .bottom {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 1rem;
+        }
+
+        .bottom-left {
+            border: 1px solid rgb(95, 85, 85);
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        .bottom-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .br-top,
+        .br-bottom {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .br-center {
+            border: 1px solid rgb(95, 85, 85);
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        .brt-text,
+        .brb-text {
+            border: 1px solid rgb(95, 85, 85);
+            border-radius: 1rem;
+            padding: 1rem;
+            flex: 1;
+        }
+
+        img {
+            height: 150px;
+            width: auto;
+            border-radius: 0.5rem;
+        }
+
+        /* 🔥 Responsive Fix */
+        @media (max-width: 768px) {
+            .bottom {
+                grid-template-columns: 1fr;
+            }
+
+            .br-top,
+            .br-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div>hamburger</div>
+        <div class="center-nav">brand</div>
+        <div>user menu</div>
+    </div>
+
+    <div class="landing-page">
+        <div class="top">
+            How had she been so wrong? All her instincts and intuition completely failed her for the first time in her life. She had so heavily relied on both when making decisions up until this moment and she felt a seismic shift take place in her self-confidence.
+        </div>
+
+        <div class="bottom">
+            <div class="bottom-left">
+                It went through such rapid contortions that the little bear was forced to change his hold on it so many times he became confused in the darkness, and could not, for the life of him, tell whether he held the sheep right side up, or upside down. But that point was decided for him a moment later by the animal itself, who, with a sudden twist, jabbed its horns so hard into his lowest ribs that he gave a grunt of anger and disgust.
+            </div>
+
+            <div class="bottom-right">
+                <div class="br-top">
+                    <img src="/web design layouts/images/apolocheese.png" alt="">
+                    <div class="brt-text">
+                        It's not his fault. I know you're going to want to, but you can't blame him. He really has no idea how it happened. I kept trying to come up with excuses I could say to mom that would keep her calm when she found out what happened, but the more I tried, the more I could see none of them would work. He was going to get her wrath and there was nothing I could say to prevent it.
+                    </div>
+                </div>
+
+                <div class="br-center">
+                    Then came the night of the first falling star. It was seen early in the morning, rushing over Winchester eastward, a line of flame high in the atmosphere. Hundreds must have seen it and taken it for an ordinary falling star. It seemed that it fell to earth about one hundred miles east of him.
+
+                </div>
+
+                <div class="br-bottom">
+                    <div class="brb-text">
+                        Ten more steps. If he could take ten more steps it would be over, but his legs wouldn't move. He tried to will them to work, but they wouldn't listen to his brain. Ten more steps and it would be over but it didn't appear he would be able to do it.
+                    </div>
+                    <img src="/web design layouts/images/lock-in.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
