@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Layout</title>
+    <style>
+        body {
+            background-color: rgb(38, 37, 37);
+            color: white;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1rem;
+            border: 1px solid rgb(95, 85, 85);
+            border-radius: 1rem;
+        }
+        .nav .center-nav {
+            font-size: 2rem;
+        }
+        .landing-page {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding-top: 1rem;
+            height: 85vh;
+
+        }
+        .landing-page .left-lp, .landing-page .right-lp {
+            background-color: rgb(41, 40, 40);
+            border-radius: 8px;
+            border: 1px solid rgb(95, 85, 85);
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left-nav">hamburger</div>
+        <div class="center-nav">brand</div>
+        <div class="right-nav">user menu</div>
+    </div>
+    <div class="landing-page">
+        <div class="left-lp">
+            They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. Everything was thrown into the car and they sped off. Thirty minutes later they were safe and that was when it dawned on them that they had forgotten the most important thing of all. 
+            <br>
+            <br>
+            Spending time at national parks can be an exciting adventure, but this wasn't the type of excitement she was hoping to experience. As she contemplated the situation she found herself in, she knew she'd gotten herself in a little more than she bargained for. It wasn't often that she found herself in a tree staring down at a pack of wolves that were looking to make her their next meal.
+        </div>
+        <div class="right-lp">
+            She nervously peered over the edge. She understood in her mind that the view was supposed to be beautiful, but all she felt was fear. There had always been something about heights that disturbed her, and now she could feel the full force of this unease. She reluctantly crept a little closer with the encouragement of her friends as the fear continued to build. She couldn't help but feel that something horrible was about to happen.
+            <br>
+            <br>
+            At that moment he had a thought that he'd never imagine he'd consider. "I could just cheat," he thought, "and that would solve the problem." He tried to move on from the thought but it was persistent. It didn't want to go away and, if he was honest with himself, he didn't want it to.
+        </div>
+    </div>
+</body>
+</html>
